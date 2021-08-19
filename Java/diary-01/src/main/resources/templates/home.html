@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Diary</title>
+<link th:href="@{/css/default.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/css/home.css}" rel="stylesheet" type="text/css">
+<script type="text/javascript" th:src="@{js/home.js}"></script>
+</head>
+<body class="wrapper">
+    <form action="/home">
+        <header>
+            <h1 class="title">Diary</h1>
+            <div class="right">
+                <a href="http://localhost:8081/home" onclick="OnLinkClick();">HOME</a>
+            </div>
+        </header>
+        <main>
+            <h2>HOME</h2>
+            <div class="body">
+                <table border="1" id="diaryTable">
+                    <tr>
+                        <th>月日</th>
+                        <th>Title</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </form>
+</body>
+</html>

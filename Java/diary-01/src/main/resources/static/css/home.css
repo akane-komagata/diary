@@ -1,0 +1,31 @@
+@charset "UTF-8";
+ 	.body {
+		width: 500px;
+		border-radius: 60px;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	/* 日記のリスト */
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		background-color: #eee;
+	}
+	
+	td {
+		width: 70%;
+		text-align: center;
+		background-color: #eee;
+		padding: 15px 10px;
+		border-bottom: solid 2px white;
+	}
+	th {
+		position: relative;
+		width: 30px;
+		background-color: #9e9b93;
+		color: white;
+		text-align: center;
+		padding: 15px 30px;
+		border-bottom: solid 2px white;
+	}
