@@ -15,18 +15,17 @@ function OnLinkClick(){
 	xmlHttpRequest.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
 			diaryDate = this.response;
-    		console.log(diaryDate.date);
 			let table = document.getElementById('diaryTable');
 		
 	
 			diaryDate.forEach(function(data){
-			let newRow = table.insertRow();
-			let newCell = newRow.insertCell();
-			let newText = document.createTextNode(data.date);
-			newCell.appendChild(newText);
-			let newTitle = document.createTextNode(data.title);
-			let Title = newRow.insertCell();
-			Title.appendChild(newTitle);
+				let newRow = table.insertRow();
+				let newCell = newRow.insertCell();
+				let newText = document.createTextNode(data.date);
+				newCell.appendChild(newText);
+				let newTitle = document.createTextNode(data.title);
+				let title = newRow.insertCell();
+				title.appendChild(newTitle);
 			});
 		}
 	}

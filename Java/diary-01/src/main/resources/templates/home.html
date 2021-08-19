@@ -7,9 +7,8 @@
 <link th:href="@{/css/home.css}" rel="stylesheet" type="text/css">
 <script type="text/javascript" th:src="@{js/home.js}"></script>
 </head>
-<body>
 <body class="wrapper">
-    <form action="/home" method="post">
+    <form action="/home">
         <header>
             <h1 class="title">Diary</h1>
             <div class="right">
@@ -20,12 +19,10 @@
             <h2>HOME</h2>
             <div class="body">
                 <table border="1" id="diaryTable">
-                    <thead>
-                        <tr>
-                            <th>月日</th>
-                            <th>Title</th>
-                        </tr>
-                    </thead>
+                    <tr>
+                        <th>月日</th>
+                        <th>Title</th>
+                    </tr>
                 </table>
             </div>
         </main>
