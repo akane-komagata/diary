@@ -8,24 +8,26 @@
 <script type="text/javascript" th:src="@{js/home.js}"></script>
 </head>
 <body class="wrapper">
-    <form action="/home">
-        <header>
-            <h1 class="title">Diary</h1>
-            <div class="right">
-                <a href="http://localhost:8081/home" onclick="OnLinkClick();">HOME</a>
-            </div>
-        </header>
-        <main>
-            <h2>HOME</h2>
-            <div class="body">
-                <table border="1" id="diaryTable">
+    <header>
+        <h1 class="title">Diary</h1>
+        <div class="right">
+            <a href="http://localhost:8081/home" onclick="OnLinkClick();">HOME</a>
+        </div>
+    </header>
+    <main>
+        <h2>HOME</h2>
+        <div class="body">
+            <table border="1" id="diaryTable">
+                <thead>
                     <tr>
                         <th>月日</th>
                         <th>Title</th>
                     </tr>
-                </table>
-            </div>
-        </main>
-    </form>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
